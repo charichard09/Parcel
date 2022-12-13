@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Shipping</title>
+    <link 
+      rel="stylesheet" 
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" 
+      crossorigin="anonymous">
+  </head>
+  <body>
+    <h1>Enter Package Details:</h1>
+
+    <form action="/shipping-cost" method="post">
+      <div class="form-group row">
+        <label for="width" class="col-4 col-form-label">Width:</label> 
+        <div class="col-8">
+          <input id="width" name="width" type="number" class="form-control" requireda min="0">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="height" class="col-4 col-form-label">Height:</label> 
+        <div class="col-8">
+          <input id="height" name="height" type="number" class="form-control" required min="0">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="length" class="col-4 col-form-label">Length:</label> 
+        <div class="col-8">
+          <input id="length" name="length" type="number" class="form-control" required min="0">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="weight" class="col-4 col-form-label">Weight:</label> 
+        <div class="col-8">
+          <input id="weight" name="weight" type="number" class="form-control" required min="0">
+        </div>
+      </div> 
+      <div class="form-group row">
+        <div class="offset-4 col-8">
+          <button name="submit" type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
